@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+</head>
+<body>
+
+  <header>
+    <nav>
+        <div class="logo">
+            <span class="logo-text">ALPHA</span>
+        </div>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="index.html">Home</a></li>
+                <li class="nav-link"><a href="about.html">About</a></li>
+                <li class="nav-link"><a href="project.html">Project</a></li>
+                <li class="nav-link"><a href="services.html">Service</a></li>
+                <li class="nav-link"><a href="#contact">Contact</a></li>
+              </ul>
+            <button class="toggle-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+</header>
+
+
+
+
+
+  <section class="hero-section" data-tilt data-tilt-glare data-tilt-max-glare="0.6">
+    <div class="hero-intro">Hi! I am Wasiun<br>
+      A frontend Developer
+    </div>
+    <div class="hero-body">
+      <p class="hero-text">Hi, I'm Wasiun, a passionate web designer and developer with a focus on creating visually stunning and user-friendly websites. I specialize in building fast, responsive, and SEO-optimized websites that help businesses and individuals thrive online. My goal is to turn your ideas into a digital reality, providing you with a website that not only looks amazing but also performs flawlessly across all devices. Let’s work together to elevate your online presence and make a lasting impact!.</p>
+      <button class="cta">About me</button>
+    </div>
+  </section>
+
+  <h1>You will get to know</h1>
+  <section class="intro">
+    
+    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.6">
+      <h2>About me</h2>
+      <p class="intro-text">Get to know who I am, my journey, and what drives me to create exceptional websites.</p>    
+      <button class=" intro-button">About me</button>
+    </div>
+    
+    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.6">
+      <h2>My Projects</h2>
+      <p class="intro-text">Explore my past work, showcasing the websites and projects I've brought to life.</p>   
+      <button class="intro-button">My Projects</button> 
+    </div>
+    
+    <div class="card" data-tilt data-tilt-glare data-tilt-max-glare="0.6">
+      <h2>My services</h2>
+      <p class="intro-text">Discover the range of services I offer, from web design to development, tailored to help you succeed online.</p>  
+      <button class="intro-button">My services</button>  
+    </div>
+    
+  </section>
+
+  <section class="contact-me" >
+    <h1>Contact me</h1>
+    <form action="https://formspree.io/f/xjkybppq" method="POST" id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta" style="cursor: pointer;">Send</button>
+      <p id="responseMessage"></p>
+    </form>
+    <div class="find-me">
+      
+      <h1 style="margin-top: 30px;" id="contact">Or hire me in</h1>
+      <div class="icon">
+      <a href="#">FrontMentor</a>
+      <a href="#"><i class="fa-brands fa-github find"></i></a>
+      <a href="#">Fiverr</a>
+      <a href="#">Upwork</a>
+      <a href="#">Freelancer.com</i></a>
+      <a href="#"><i class="fa-brands fa-facebook find"></i></a>
+    </div>
+  </section>
+
+  <script src="vanilla-tilt.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

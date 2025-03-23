@@ -150,7 +150,7 @@ nav {
   color: white;
   font-size: 18px;
   width: 80%;
-  line-height: 25px;
+  line-height: 30px;
 }
 .cta{
   width: 300px;
@@ -218,6 +218,10 @@ h2{
   align-self: center;
   cursor: pointer;
   border: none;
+}
+.btn-text{
+  color: white;
+  text-decoration: none;
 }
 h1{
   font-size: 35px;

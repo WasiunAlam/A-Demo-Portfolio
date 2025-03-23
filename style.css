@@ -284,6 +284,7 @@ input::placeholder{
 }
 .icon a{
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.801);
 }
 .find-me{
   color: rgb(88, 88, 88);

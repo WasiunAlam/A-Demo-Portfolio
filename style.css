@@ -10,6 +10,16 @@ html{
 body{
   background-color: #0e0c15;
 }
+.trail {
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  border-radius: 50%;
+  background: #cc00fff8; /* Default purple color */
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease-out, transform 0.1s linear;
+}
 /* Basic styling for the header */
 header {
   height: 150px;
@@ -252,7 +262,7 @@ input, textarea{
   width: 400px;
   margin-top: 20px;
   border: 1px solid rgb(153, 0, 255);
-  background-color: rgb(119, 0, 255) !important;
+  background-color: rgb(119, 0, 255);
   padding: 5px;
   font-weight: bold;
   font-size: 20px;
@@ -264,7 +274,7 @@ textarea{
   height: 100px;
 }
 textarea::placeholder{
-  color: white;
+  color: rgb(255, 255, 255);
 }
 input::placeholder{
   color: rgb(255, 255, 255);

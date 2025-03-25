@@ -51,6 +51,7 @@
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 10px;
 }
 .skill-card:hover{
   animation: glowSection 1s infinite alternate;
@@ -71,8 +72,9 @@
 }
 .skill-text{
   color: rgb(253, 253, 253);
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 20px;
+  line-height: 22px;
 }
 .thanks-message{
   font-size: 40px;

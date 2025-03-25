@@ -6,8 +6,60 @@ toggleBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
+const trailCount = 7; // Number of trails
+        const trails = [];
 
+        for (let i = 0; i < trailCount; i++) {
+            const div = document.createElement("div");
+            div.classList.add("trail");
+            document.body.appendChild(div);
+            trails.push(div);
+        }
 
+        let current = 0;
+
+        document.addEventListener("mousemove", (e) => {
+            const trail = trails[current];
+
+            // Adjust position based on scroll
+            const scrollX = window.scrollX;
+            const scrollY = window.scrollY;
+
+            // Position the trail exactly at the cursor, accounting for scroll
+            trail.style.left = `${e.clientX + scrollX}px`;
+            trail.style.top = `${e.clientY + scrollY}px`;
+
+            // Generate random shades of purple for each trail
+            // trail.style.background = `hsl(${Math.random() * 40 + 240}, 100%, 50%)`;
+
+            // Reset opacity and fade out smoothly
+            trail.style.opacity = "1";
+            setTimeout(() => {
+                trail.style.opacity = "0";
+            }, 300);
+
+            current = (current + 1) % trailCount;
+        });
+
+ document.getElementById("contactForm").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevent form from redirecting
+        
+          const formData = new FormData(this); // Get form data
+        
+          fetch("https://formspree.io/f/xjkybppq", {
+              method: "POST",
+              body: formData,
+              headers: { "Accept": "application/json" }
+          })
+          .then(response => response.json())
+          .then(data => {
+              document.getElementById("responseMessage").innerText = "Thank you! Your message has been sent.";
+              document.getElementById("contactForm").reset(); // Clear form fields
+          })
+          .catch(error => {
+              document.getElementById("responseMessage").innerText = "Something went wrong. Try again.";
+          });
+        });
   ScrollReveal().reveal('.identity-section',{ 
     origin: 'top', 
     distance: '50px', 

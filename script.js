@@ -6,6 +6,33 @@ toggleBtn.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
+
+// project page showProject part
+
+let crossBtn=document.querySelectorAll('.i1')
+let projectContainer=document.querySelectorAll('.show-project')
+crossBtn[0].addEventListener('click',() => {
+  projectContainer[0].style.display="none"
+})
+crossBtn[1].addEventListener('click',() => {
+  projectContainer[1].style.display="none"
+})
+crossBtn[2].addEventListener('click',() => {
+  projectContainer[2].style.display="none"
+})
+
+let showButton=document.querySelectorAll('.showcasing')
+showButton[0].addEventListener('click',() => {
+  projectContainer[0].style.display='block'
+})
+showButton[1].addEventListener('click',() => {
+  projectContainer[1].style.display='block'
+})
+showButton[2].addEventListener('click',() => {
+  projectContainer[2].style.display='block'
+})
+
+//animating cursor part
 const trailCount = 7; // Number of trails
         const trails = [];
 
@@ -41,6 +68,8 @@ const trailCount = 7; // Number of trails
             current = (current + 1) % trailCount;
         });
 
+
+//contact form
  document.getElementById("contactForm").addEventListener("submit", function(event) {
           event.preventDefault(); // Prevent form from redirecting
         
@@ -60,6 +89,9 @@ const trailCount = 7; // Number of trails
               document.getElementById("responseMessage").innerText = "Something went wrong. Try again.";
           });
         });
+
+
+  //Scroll reveal part      
   ScrollReveal().reveal('.identity-section',{ 
     origin: 'top', 
     distance: '50px', 

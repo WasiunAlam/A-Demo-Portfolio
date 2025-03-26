@@ -208,7 +208,8 @@ nav {
   animation: glowSection 1s infinite alternate;
 }
 .intro-text{
-  color: rgb(197, 197, 197);
+  color: rgb(233, 233, 233);
+  line-height: 22px;
 }
 h2{
   font-size: 35px;
